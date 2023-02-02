@@ -34,8 +34,8 @@ function ProductsList() {
     <>
       <h2 className="text-center p-3"> Our Products </h2>
       <div className="container">
-        <div className="row mb-3">
-          <div className="col-1">
+        <div className="row mb-3 d-sm-flex flex-sm-column">
+          <div className="col d-flex gap-5">
             <button
               onClick={() => {
                 getProducts();
@@ -44,8 +44,6 @@ function ProductsList() {
             >
               All
             </button>
-          </div>
-          <div className="col d-flex gap-5">
             {categories.map((cat) => {
               return (
                 <button
@@ -65,7 +63,7 @@ function ProductsList() {
         <div className="row">
           {products.map((product) => {
             return (
-              <div className="col-3" key={product.id}>
+              <div className="col-lg-3 col-xm-12 col-md-6" key={product.id}>
                 <Product product={product} showButton={true} />
               </div>
             );

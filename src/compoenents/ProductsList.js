@@ -34,27 +34,33 @@ function ProductsList() {
     <>
       <h2 className="text-center p-3"> Our Products </h2>
       <div className="container">
-        <button
-          onClick={() => {
-            getProducts();
-          }}
-          className="btn btn-info"
-        >
-          All
-        </button>
-        {categories.map((cat) => {
-          return (
+        <div className="row mb-3">
+          <div className="col-1">
             <button
-              key={cat}
               onClick={() => {
-                getProductInCategory(cat);
+                getProducts();
               }}
               className="btn btn-info"
             >
-              {cat}
+              All
             </button>
-          );
-        })}
+          </div>
+          <div className="col d-flex gap-5">
+            {categories.map((cat) => {
+              return (
+                <button
+                  key={cat}
+                  onClick={() => {
+                    getProductInCategory(cat);
+                  }}
+                  className="btn btn-info"
+                >
+                  {cat}
+                </button>
+              );
+            })}
+          </div>
+        </div>
 
         <div className="row">
           {products.map((product) => {

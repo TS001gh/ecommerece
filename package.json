@@ -1,6 +1,7 @@
 {
   "name": "session-5-basic-ecommerc-app",
   "version": "0.1.0",
+  "homepage": "https://https://ts001gh.github.io//ecommerece",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

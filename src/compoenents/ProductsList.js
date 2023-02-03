@@ -34,7 +34,7 @@ function ProductsList() {
     <>
       <h2 className="text-center p-3"> Our Products </h2>
       <div className="container">
-        <div className="row mb-3 d-sm-flex flex-sm-column">
+        <div className="row mb-3">
           <div className="col d-flex gap-5">
             <button
               onClick={() => {

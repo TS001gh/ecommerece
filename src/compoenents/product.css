@@ -9,7 +9,7 @@
 }
 
 .card {
-  height: 85vh;
+  height: 85vh !important;
   margin-bottom: 10px;
   position: relative;
 }

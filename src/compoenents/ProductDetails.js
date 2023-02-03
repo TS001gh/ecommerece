@@ -12,13 +12,15 @@ function ProductDetails() {
       .then((product) => setProduct(product));
   }, []);
   return (
-    <div className="container">
-      <div className="row d-flex justify-content-center mt-3">
-        <div className="col-4">
-          <Product product={product} showButton={false} />
+    <>
+      <div className="container">
+        <div className="row d-flex justify-content-center">
+          <div className="col-4">
+            <Product product={product} showButton={false} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
